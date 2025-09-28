@@ -4,7 +4,7 @@
             
             <b  id="t1">Enter your password</b>
            
-            <img src="/picture/touxiang5.webp" alt="" class="img">
+            <img src="./picture/touxiang5.webp" alt="" class="img">
             <p style="position: absolute; left: 120px; top:100px ; font-size: 20px;">Player account</p>
              <b style="position: absolute; left: 120px; top:140px ; font-size: 30px; " id="actName">{{ submit.act }}</b>
              <b style="position: absolute ;left: 0px; top:200px"> Account:</b>
