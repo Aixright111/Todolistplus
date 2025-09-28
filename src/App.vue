@@ -31,7 +31,7 @@ v-model:checkval="item.done"
 > </Node>
 
 </ul>
-<!-- <button @click="clearstorage">测试按钮</button> -->
+<button @click="clearstorage">测试按钮</button>
 <Denglu class="denglu" v-if="showvalue" @change="onclose" @loginmsg="Applogin"></Denglu>
 </div>
 </template>
