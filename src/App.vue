@@ -31,7 +31,7 @@ v-model:checkval="item.done"
 > </Node>
 
 </ul>
-<button @click="clearstorage">测试按钮</button>
+<!-- <button @click="clearstorage">测试按钮</button> -->
 <Denglu class="denglu" v-if="showvalue" @change="onclose" @loginmsg="Applogin"></Denglu>
 </div>
 </template>
@@ -67,9 +67,10 @@ function onclose(){
 showvalue.value=false
 }
 //清楚本地缓存测试按钮
-async function clearstorage(){
-users.value= await onget();
-}
+// async function clearstorage(){
+
+// users.value= await onget();
+// }
 
 //获取json文件并存入本地存储初始化！！！
 async function onget() {  
@@ -87,6 +88,7 @@ window.addEventListener('beforeunload', savelocalstorage)
 const storege=(localStorage.getItem('user'))
 if(storege){
    users.value=JSON.parse(storege);
+   users.value=await onget(); 
 }
 else{
 users.value=await onget(); 
