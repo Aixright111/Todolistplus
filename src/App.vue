@@ -87,7 +87,7 @@ onMounted(async()=>{
 window.addEventListener('beforeunload', savelocalstorage)
 const storege=(localStorage.getItem('user'))
 if(storege){
-   users.value=JSON.parse(storege);
+  //  users.value=JSON.parse(storege);
    users.value=await onget(); 
 }
 else{
