@@ -117,6 +117,8 @@ currentuser.value=users.value[i]
 disabled.value=true;
 textdisabled.value=false;
 islogin.value=true;
+console.log(currentuser.value.src);
+
 console.log(src.value);}}
 }
 //用户退出
