@@ -53,7 +53,7 @@ const islogin=ref(false)
 const todolist=ref([])
 const todo=computed(()=>(todolist.value||[]).filter(t=>!t.done))
 const done=computed(()=>(todolist.value||[]).filter(t=>t.done))
-const src=computed(()=>currentuser.value?currentuser.value.src:"/touxiang5.webp")
+const src=computed(()=>currentuser.value?currentuser.value.src:"/picture/touxiang5.webp")
 const finished=computed(() => Array.isArray(done?.value) ? done.value.length : 0)
 const total=computed(() => Array.isArray(todolist?.value)  ? todolist.value.length : 100)
 const height=ref("50px")
@@ -75,7 +75,7 @@ localStorage.clear();
 async function onget() {  
   try {
     // 1. 发 AJAX 请求（dev 服务器会自动代理 public 目录）
-    const { data } = await axios.get('/data.json') // 文件放在 public/users.json
+    const { data } = await axios.get('./data.json') // 文件放在 public/users.json
     return data
   } catch (e) {
     console.error('加载失败', e)
