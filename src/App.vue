@@ -67,8 +67,8 @@ function onclose(){
 showvalue.value=false
 }
 //清楚本地缓存测试按钮
-function clearstorage(){
-localStorage.clear();
+async function clearstorage(){
+users.value= await onget();
 }
 
 //获取json文件并存入本地存储初始化！！！
